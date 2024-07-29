@@ -19,11 +19,11 @@ export function ThemeToggleButton() {
   return (
     <div>
       {!mounted ? (
-        <button className=" rounded-full border">
-          <ClockIcon />
+        <button className="rounded-full border p-4">
+          <ClockIcon className="w-6 h-6" />
         </button>
       ) : (
-        <button className="rounded-full border p-4 " onClick={toggleTheme}>
+        <button className="rounded-full border p-4" onClick={toggleTheme}>
           {resolvedTheme === "light" ? (
             <MoonIcon className="w-6 h-6" />
           ) : (
